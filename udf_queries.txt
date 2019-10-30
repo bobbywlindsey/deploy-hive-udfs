@@ -1,0 +1,3 @@
+USE your_schema_name
+DROP FUNCTION IF EXISTS your_schema_name.my_function
+CREATE FUNCTION my_function AS 'my_function_package.MyFunction' USING JAR 'hdfs:///parentfolder/childfolder/your_schema_name/udfs.jar'
